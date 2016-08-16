@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/amber/.nvm/versions/node/v6.3.0/bin/node',
+1 verbose cli   '/home/amber/.nvm/versions/node/v6.3.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react
+8 silly fetchNamedPackageData react
+9 silly mapToRegistry name react
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'react',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'react',
+12 silly mapToRegistry   name: 'react',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npm.taobao.org/react
+14 verbose request uri https://registry.npm.taobao.org/react
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:47:15 AM
+17 verbose request id aecbd9ff7bfb4ea9
+18 verbose etag "22290-XKaCRhyA41+6J+KW6Dukbg"
+19 http request GET https://registry.npm.taobao.org/react
+20 http 304 https://registry.npm.taobao.org/react
+21 verbose headers { date: 'Fri, 12 Aug 2016 02:47:15 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-current-requests': '1',
+21 verbose headers   etag: '"22290-XKaCRhyA41+6J+KW6Dukbg"',
+21 verbose headers   'x-readtime': '99' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 12 Aug 2016 02:47:15 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-current-requests': '1',
+22 silly get     etag: '"22290-XKaCRhyA41+6J+KW6Dukbg"',
+22 silly get     'x-readtime': '99' } ]
+23 verbose etag https://registry.npm.taobao.org/react from cache
+24 verbose get saving react to /home/amber/.npm/registry.npm.taobao.org/react/.cache.json
+25 verbose correctMkdir /home/amber/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Refusing to install react as a dependency of itself
+43 verbose stack     at checkSelf (/home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+43 verbose stack     at Array.<anonymous> (/home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+43 verbose stack     at LOOP (/home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+43 verbose stack     at chain (/home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+43 verbose stack     at /home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/lib/install/validate-args.js:16:5
+43 verbose stack     at /home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at /home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at asyncMap (/home/amber/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+44 verbose cwd /home/amber/shixun/react-route-mine
+45 error Linux 4.4.0-34-generic
+46 error argv "/home/amber/.nvm/versions/node/v6.3.0/bin/node" "/home/amber/.nvm/versions/node/v6.3.0/bin/npm" "install" "--save" "react"
+47 error node v6.3.0
+48 error npm  v3.10.3
+49 error code ENOSELF
+50 error Refusing to install react as a dependency of itself
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
